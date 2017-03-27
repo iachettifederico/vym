@@ -1,5 +1,7 @@
 require "bundler/setup"
 require "vym"
+require "rspec/given"
+require "awesome_print"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
