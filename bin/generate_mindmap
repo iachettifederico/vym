@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+require "./lib/vym/mind_map"
+
+
+Vym::MindMap.from_org_file(ARGV[0]).to_file("/tmp/my_map.vym")

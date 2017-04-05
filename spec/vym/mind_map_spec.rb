@@ -6,32 +6,32 @@ module Vym
   RSpec.describe MindMap do
     Given(:expected) {
       <<~XML
-        <?xml version="1.0" encoding="utf-8"?><!DOCTYPE vymmap>
-
-        <vymmap  version="2.5.0">
+        <?xml version="1.0" encoding="utf-8"?>
+        <!DOCTYPE vymmap>
+        <vymmap version="2.5.0">
           <mapcenter>
             <heading>MAIN CONCEPT</heading>
-            <branch uuid="{001}">
+            <branch>
               <heading>Branch 1</heading>
-              <branch uuid="{002}">
+              <branch>
                 <heading>Branch 1.1</heading>
-                <branch uuid="{003}">
+                <branch>
+                  <heading>Branch 1.1.1</heading>
+                </branch>
+                <branch>
                   <heading>Branch 1.1.2</heading>
                 </branch>
-                <branch uuid="{004}">
-                  <heading>Branch 1.1.3</heading>
-                </branch>
               </branch>
-              <branch uuid="{005}">
+              <branch>
                 <heading>Branch 1.2</heading>
               </branch>
             </branch>
-            <branch uuid="{006}">
+            <branch>
               <heading>Branch 2</heading>
-              <branch uuid="{007}">
+              <branch>
                 <heading>Branch 2.1</heading>
               </branch>
-              <branch uuid="{008}">
+              <branch>
                 <heading>Branch 2.2</heading>
               </branch>
             </branch>
